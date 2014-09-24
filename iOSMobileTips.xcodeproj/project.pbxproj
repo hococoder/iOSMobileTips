@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE94A24719D26EDE00C94BDC /* TipsGeneratorArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94A24619D26EDD00C94BDC /* TipsGeneratorArray.m */; };
 		AEED551119D112AC00D3ED29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED551019D112AC00D3ED29 /* main.m */; };
 		AEED551419D112AC00D3ED29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED551319D112AC00D3ED29 /* AppDelegate.m */; };
 		AEED551719D112AC00D3ED29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED551619D112AC00D3ED29 /* ViewController.m */; };
@@ -14,6 +15,16 @@
 		AEED551C19D112AC00D3ED29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEED551B19D112AC00D3ED29 /* Images.xcassets */; };
 		AEED551F19D112AC00D3ED29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEED551D19D112AC00D3ED29 /* LaunchScreen.xib */; };
 		AEED552B19D112AC00D3ED29 /* iOSMobileTipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED552A19D112AC00D3ED29 /* iOSMobileTipsTests.m */; };
+		AEED553B19D1145400D3ED29 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED553A19D1145400D3ED29 /* TipViewController.m */; };
+		AEED553C19D1145400D3ED29 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED553A19D1145400D3ED29 /* TipViewController.m */; };
+		AEED553F19D1146F00D3ED29 /* TipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED553E19D1146F00D3ED29 /* TipsTableViewController.m */; };
+		AEED554019D1146F00D3ED29 /* TipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED553E19D1146F00D3ED29 /* TipsTableViewController.m */; };
+		AEED554319D1147F00D3ED29 /* TipsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED554219D1147F00D3ED29 /* TipsCollectionViewController.m */; };
+		AEED554419D1147F00D3ED29 /* TipsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED554219D1147F00D3ED29 /* TipsCollectionViewController.m */; };
+		AEED554719D1149B00D3ED29 /* TipsSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED554619D1149B00D3ED29 /* TipsSplitViewController.m */; };
+		AEED554819D1149B00D3ED29 /* TipsSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED554619D1149B00D3ED29 /* TipsSplitViewController.m */; };
+		AEED554B19D114B900D3ED29 /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED554A19D114B900D3ED29 /* Tip.m */; };
+		AEED554C19D114B900D3ED29 /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED554A19D114B900D3ED29 /* Tip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE94A24519D26EDD00C94BDC /* TipsGeneratorArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsGeneratorArray.h; sourceTree = "<group>"; };
+		AE94A24619D26EDD00C94BDC /* TipsGeneratorArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsGeneratorArray.m; sourceTree = "<group>"; };
 		AEED550B19D112AC00D3ED29 /* iOSMobileTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMobileTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEED550F19D112AC00D3ED29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEED551019D112AC00D3ED29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +53,16 @@
 		AEED552419D112AC00D3ED29 /* iOSMobileTipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMobileTipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEED552919D112AC00D3ED29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEED552A19D112AC00D3ED29 /* iOSMobileTipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMobileTipsTests.m; sourceTree = "<group>"; };
+		AEED553919D1145400D3ED29 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		AEED553A19D1145400D3ED29 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		AEED553D19D1146F00D3ED29 /* TipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsTableViewController.h; sourceTree = "<group>"; };
+		AEED553E19D1146F00D3ED29 /* TipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsTableViewController.m; sourceTree = "<group>"; };
+		AEED554119D1147F00D3ED29 /* TipsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsCollectionViewController.h; sourceTree = "<group>"; };
+		AEED554219D1147F00D3ED29 /* TipsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsCollectionViewController.m; sourceTree = "<group>"; };
+		AEED554519D1149B00D3ED29 /* TipsSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsSplitViewController.h; sourceTree = "<group>"; };
+		AEED554619D1149B00D3ED29 /* TipsSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsSplitViewController.m; sourceTree = "<group>"; };
+		AEED554919D114B900D3ED29 /* Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tip.h; sourceTree = "<group>"; };
+		AEED554A19D114B900D3ED29 /* Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +104,11 @@
 		AEED550D19D112AC00D3ED29 /* iOSMobileTips */ = {
 			isa = PBXGroup;
 			children = (
+				AEED553819D1140B00D3ED29 /* CustomCells */,
+				AEED553719D1140100D3ED29 /* SplitViewController */,
+				AEED553619D1136500D3ED29 /* CollectionView */,
+				AEED553519D1135800D3ED29 /* TableView */,
+				AEED553419D1135200D3ED29 /* Tips */,
 				AEED551219D112AC00D3ED29 /* AppDelegate.h */,
 				AEED551319D112AC00D3ED29 /* AppDelegate.m */,
 				AEED551519D112AC00D3ED29 /* ViewController.h */,
@@ -117,6 +145,53 @@
 				AEED552919D112AC00D3ED29 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEED553419D1135200D3ED29 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				AEED553919D1145400D3ED29 /* TipViewController.h */,
+				AEED553A19D1145400D3ED29 /* TipViewController.m */,
+				AEED554919D114B900D3ED29 /* Tip.h */,
+				AEED554A19D114B900D3ED29 /* Tip.m */,
+				AE94A24519D26EDD00C94BDC /* TipsGeneratorArray.h */,
+				AE94A24619D26EDD00C94BDC /* TipsGeneratorArray.m */,
+			);
+			name = Tips;
+			sourceTree = "<group>";
+		};
+		AEED553519D1135800D3ED29 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				AEED553D19D1146F00D3ED29 /* TipsTableViewController.h */,
+				AEED553E19D1146F00D3ED29 /* TipsTableViewController.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		AEED553619D1136500D3ED29 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AEED554119D1147F00D3ED29 /* TipsCollectionViewController.h */,
+				AEED554219D1147F00D3ED29 /* TipsCollectionViewController.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		AEED553719D1140100D3ED29 /* SplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AEED554519D1149B00D3ED29 /* TipsSplitViewController.h */,
+				AEED554619D1149B00D3ED29 /* TipsSplitViewController.m */,
+			);
+			name = SplitViewController;
+			sourceTree = "<group>";
+		};
+		AEED553819D1140B00D3ED29 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE94A24719D26EDE00C94BDC /* TipsGeneratorArray.m in Sources */,
 				AEED551719D112AC00D3ED29 /* ViewController.m in Sources */,
 				AEED551419D112AC00D3ED29 /* AppDelegate.m in Sources */,
+				AEED553B19D1145400D3ED29 /* TipViewController.m in Sources */,
+				AEED553F19D1146F00D3ED29 /* TipsTableViewController.m in Sources */,
+				AEED554319D1147F00D3ED29 /* TipsCollectionViewController.m in Sources */,
+				AEED554B19D114B900D3ED29 /* Tip.m in Sources */,
+				AEED554719D1149B00D3ED29 /* TipsSplitViewController.m in Sources */,
 				AEED551119D112AC00D3ED29 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEED554419D1147F00D3ED29 /* TipsCollectionViewController.m in Sources */,
+				AEED553C19D1145400D3ED29 /* TipViewController.m in Sources */,
+				AEED554819D1149B00D3ED29 /* TipsSplitViewController.m in Sources */,
+				AEED554C19D114B900D3ED29 /* Tip.m in Sources */,
+				AEED554019D1146F00D3ED29 /* TipsTableViewController.m in Sources */,
 				AEED552B19D112AC00D3ED29 /* iOSMobileTipsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +500,7 @@
 				AEED553019D112AC00D3ED29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEED553119D112AC00D3ED29 /* Build configuration list for PBXNativeTarget "iOSMobileTipsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +509,7 @@
 				AEED553319D112AC00D3ED29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
