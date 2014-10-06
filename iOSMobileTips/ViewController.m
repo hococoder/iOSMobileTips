@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TipsTableViewController.h"
+#import "TipsCollectionViewController.h"
 
 @interface ViewController ()
 
@@ -40,6 +41,13 @@
         TipsGeneratorArray *tipArray = [[TipsGeneratorArray alloc] init];
         [tipArray generateSampleSet];
         [tableViewController setTipsArray:tipArray];
+    }
+    else if ([segue.identifier isEqualToString:@"collectionSegue"])
+    {
+        TipsCollectionViewController *collectionController = [segue destinationViewController];
+        TipsGeneratorArray *tipArray = [[TipsGeneratorArray alloc] init];
+        [tipArray generateSampleSet];
+        [collectionController setTipsArray:tipArray];
     }
  // Pass the selected object to the new view controller.
 }

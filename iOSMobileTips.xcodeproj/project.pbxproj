@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A09B5B619E1F52C00CB6192 /* TipsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B5B419E1F52C00CB6192 /* TipsCollectionViewCell.m */; };
+		6A09B5B719E1F52C00CB6192 /* TipsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A09B5B519E1F52C00CB6192 /* TipsCollectionViewCell.xib */; };
+		6A09B5BA19E21C3E00CB6192 /* NDCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B5B919E21C3E00CB6192 /* NDCollectionViewFlowLayout.m */; };
 		AE94A24719D26EDE00C94BDC /* TipsGeneratorArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94A24619D26EDD00C94BDC /* TipsGeneratorArray.m */; };
 		AEED551119D112AC00D3ED29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED551019D112AC00D3ED29 /* main.m */; };
 		AEED551419D112AC00D3ED29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED551319D112AC00D3ED29 /* AppDelegate.m */; };
@@ -38,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A09B5B319E1F52C00CB6192 /* TipsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsCollectionViewCell.h; sourceTree = "<group>"; };
+		6A09B5B419E1F52C00CB6192 /* TipsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsCollectionViewCell.m; sourceTree = "<group>"; };
+		6A09B5B519E1F52C00CB6192 /* TipsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsCollectionViewCell.xib; sourceTree = "<group>"; };
+		6A09B5B819E21C3E00CB6192 /* NDCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		6A09B5B919E21C3E00CB6192 /* NDCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		AE94A24519D26EDD00C94BDC /* TipsGeneratorArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsGeneratorArray.h; sourceTree = "<group>"; };
 		AE94A24619D26EDD00C94BDC /* TipsGeneratorArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsGeneratorArray.m; sourceTree = "<group>"; };
 		AEED550B19D112AC00D3ED29 /* iOSMobileTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMobileTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +182,11 @@
 			children = (
 				AEED554119D1147F00D3ED29 /* TipsCollectionViewController.h */,
 				AEED554219D1147F00D3ED29 /* TipsCollectionViewController.m */,
+				6A09B5B319E1F52C00CB6192 /* TipsCollectionViewCell.h */,
+				6A09B5B419E1F52C00CB6192 /* TipsCollectionViewCell.m */,
+				6A09B5B519E1F52C00CB6192 /* TipsCollectionViewCell.xib */,
+				6A09B5B819E21C3E00CB6192 /* NDCollectionViewFlowLayout.h */,
+				6A09B5B919E21C3E00CB6192 /* NDCollectionViewFlowLayout.m */,
 			);
 			name = CollectionView;
 			sourceTree = "<group>";
@@ -276,6 +289,7 @@
 			files = (
 				AEED551A19D112AC00D3ED29 /* Main.storyboard in Resources */,
 				AEED551F19D112AC00D3ED29 /* LaunchScreen.xib in Resources */,
+				6A09B5B719E1F52C00CB6192 /* TipsCollectionViewCell.xib in Resources */,
 				AEED551C19D112AC00D3ED29 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A09B5B619E1F52C00CB6192 /* TipsCollectionViewCell.m in Sources */,
+				6A09B5BA19E21C3E00CB6192 /* NDCollectionViewFlowLayout.m in Sources */,
 				AE94A24719D26EDE00C94BDC /* TipsGeneratorArray.m in Sources */,
 				AEED551719D112AC00D3ED29 /* ViewController.m in Sources */,
 				AEED551419D112AC00D3ED29 /* AppDelegate.m in Sources */,

@@ -15,6 +15,6 @@
 -(NSString*)getTitleAtIndex:(NSUInteger)index;
 -(NSString*)getTipDescriptionAtIndex:(NSUInteger)index;
 -(NSString*)getCodeSegmentAtIndex:(NSUInteger)index;
--(int)getCount;
+-(NSUInteger)getCount;
 
 @end

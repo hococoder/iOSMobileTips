@@ -7,6 +7,9 @@
 //
 
 #import "TipsCollectionViewController.h"
+#import "TipsCollectionViewCell.h"
+#import "TipViewController.h"
+#import "NDCollectionViewFlowLayout.h"
 
 @interface TipsCollectionViewController ()
 
@@ -23,7 +26,13 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[TipsCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    NDCollectionViewFlowLayout *flow = [[NDCollectionViewFlowLayout alloc] init];
+    [self.collectionView setCollectionViewLayout:flow];
+//    UICollectionViewFlowLayout *flow = self.collectionView.collectionViewLayout;
+    
+//    flow.minimumInteritemSpacing = 150;
     
     // Do any additional setup after loading the view.
 }
@@ -46,25 +55,44 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
-    return 0;
+    return 1;
 }
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [self.tipsArray getCount];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
+    TipsCollectionViewCell *cell = (TipsCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    [[cell titleLabel] setText:[self.tipsArray getTitleAtIndex:indexPath.row]];
+    cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, 200, 50);
+    cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
+
+-(void)collectionView:(UICollectionView*)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TipViewController *tipViewController = [storyBoard instantiateViewControllerWithIdentifier:@"tipVC"];
+    [tipViewController setTipTitleText:[self.tipsArray getTitleAtIndex:indexPath.row]];
+    [tipViewController setTipDescriptionText:[self.tipsArray getTipDescriptionAtIndex:indexPath.row]];
+    [tipViewController setTipCodeSegmentText:[self.tipsArray getCodeSegmentAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:tipViewController animated:YES];
+}
+
+- (UIEdgeInsets)collectionView:
+(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(50, 10, 50, 10);
+}
+
+//- (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    
+//}
 
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking

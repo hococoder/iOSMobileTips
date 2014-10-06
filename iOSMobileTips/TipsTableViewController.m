@@ -45,14 +45,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"test" /* forIndexPath:indexPath*/];
-//    NSLog(@"selection is %@", indexPath.row);
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"test"];
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] init];
     }
     [cell.textLabel setText:[self.tipsArray getTitleAtIndex:indexPath.row]];
-    // Configure the cell...
     return cell;
 }
 

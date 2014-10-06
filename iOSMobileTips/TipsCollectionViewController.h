@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TipsGeneratorArray.h"
 
 @interface TipsCollectionViewController : UICollectionViewController
+
+@property (nonatomic, strong) TipsGeneratorArray *tipsArray;
+
 
 @end
