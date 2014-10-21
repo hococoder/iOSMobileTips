@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString* tipTitleText;
 @property (nonatomic, strong) NSString* tipDescriptionText;
 @property (nonatomic, strong) NSString* tipCodeSegmentText;
+@property (nonatomic, strong) NSString* tipStoryboardName;
 
 @property (nonatomic, strong) IBOutlet UILabel *tipTitle;
 @property (nonatomic, strong) IBOutlet UITextView *tipDescription;

@@ -13,5 +13,6 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *tipDescription;
 @property (nonatomic, strong) NSString *codeSegment;
+@property (nonatomic, strong) NSString *storyboardName;
 
 @end

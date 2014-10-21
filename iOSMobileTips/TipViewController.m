@@ -10,7 +10,7 @@
 
 @interface TipViewController ()
 
-
+@property (nonatomic, strong) IBOutlet UIButton *showExampleButton;
 
 @end
 
@@ -23,12 +23,23 @@
     [self.tipDescription setText:self.tipDescriptionText];
     [self.tipCodeSegment setText:self.tipCodeSegmentText];
     
+    if ([self.tipStoryboardName isEqualToString:@""])
+        self.showExampleButton.hidden = YES;
+    
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)showExample:(id)sender
+{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *exampleViewController = [storyBoard instantiateViewControllerWithIdentifier:self.tipStoryboardName];
+    
+    [self.navigationController pushViewController:exampleViewController animated:YES];
 }
 
 /*

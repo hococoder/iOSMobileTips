@@ -61,6 +61,7 @@
     [tipViewController setTipTitleText:[self.tipsArray getTitleAtIndex:indexPath.row]];
     [tipViewController setTipDescriptionText:[self.tipsArray getTipDescriptionAtIndex:indexPath.row]];
     [tipViewController setTipCodeSegmentText:[self.tipsArray getCodeSegmentAtIndex:indexPath.row]];
+    [tipViewController setTipStoryboardName:[self.tipsArray getTipStoryboardNameAtIndex:indexPath.row]];
     [self.navigationController pushViewController:tipViewController animated:YES];
     
 }

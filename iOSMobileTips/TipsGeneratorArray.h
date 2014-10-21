@@ -15,6 +15,7 @@
 -(NSString*)getTitleAtIndex:(NSUInteger)index;
 -(NSString*)getTipDescriptionAtIndex:(NSUInteger)index;
 -(NSString*)getCodeSegmentAtIndex:(NSUInteger)index;
+-(NSString*)getTipStoryboardNameAtIndex:(NSUInteger)index;
 -(NSUInteger)getCount;
 
 @end
