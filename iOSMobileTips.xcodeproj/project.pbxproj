@@ -17,7 +17,6 @@
 		AE25E94F19F5E6DD0025EDA1 /* CoreLocationExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE25E94E19F5E6DD0025EDA1 /* CoreLocationExampleViewController.m */; };
 		AE25E95119F5E7A30025EDA1 /* goofy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE25E95019F5E7A30025EDA1 /* goofy.jpg */; };
 		AE25E95319F605110025EDA1 /* apl-logo2013b.png in Resources */ = {isa = PBXBuildFile; fileRef = AE25E95219F605110025EDA1 /* apl-logo2013b.png */; };
-		AE25E95719F6060E0025EDA1 /* UIKitFrameworkExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE25E95619F6060E0025EDA1 /* UIKitFrameworkExampleViewController.m */; };
 		AE715C2219F1FE6F00F4AE96 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE715C2019F1F7FE00F4AE96 /* MapKit.framework */; };
 		AE715C2419F4AD9D00F4AE96 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE715C2319F4AD9D00F4AE96 /* GLKit.framework */; };
 		AE94A24719D26EDE00C94BDC /* TipsGeneratorArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AE94A24619D26EDD00C94BDC /* TipsGeneratorArray.m */; };
@@ -69,8 +68,6 @@
 		AE25E94E19F5E6DD0025EDA1 /* CoreLocationExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationExampleViewController.m; sourceTree = "<group>"; };
 		AE25E95019F5E7A30025EDA1 /* goofy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goofy.jpg; sourceTree = "<group>"; };
 		AE25E95219F605110025EDA1 /* apl-logo2013b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apl-logo2013b.png"; sourceTree = "<group>"; };
-		AE25E95519F6060E0025EDA1 /* UIKitFrameworkExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitFrameworkExampleViewController.h; sourceTree = "<group>"; };
-		AE25E95619F6060E0025EDA1 /* UIKitFrameworkExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitFrameworkExampleViewController.m; sourceTree = "<group>"; };
 		AE715C2019F1F7FE00F4AE96 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AE715C2319F4AD9D00F4AE96 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		AE94A24519D26EDD00C94BDC /* TipsGeneratorArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsGeneratorArray.h; sourceTree = "<group>"; };
@@ -149,15 +146,6 @@
 			name = CoreImage;
 			sourceTree = "<group>";
 		};
-		AE25E95419F605E40025EDA1 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				AE25E95519F6060E0025EDA1 /* UIKitFrameworkExampleViewController.h */,
-				AE25E95619F6060E0025EDA1 /* UIKitFrameworkExampleViewController.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
 		AEC33BCE19ECABFF00A95C1F /* Social */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +185,6 @@
 		AEC33BD519ECAC5A00A95C1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AE25E95419F605E40025EDA1 /* UIKit */,
 				AE25E94919F5E68D0025EDA1 /* CoreImage */,
 				AE25E94819F5E6860025EDA1 /* CoreLocation */,
 				AEC33BD019ECAC0C00A95C1F /* MediaPlayer */,
@@ -448,7 +435,6 @@
 				AEC33BDB19ECAEC000A95C1F /* MapKitFrameworkExampleViewController.m in Sources */,
 				AEED554319D1147F00D3ED29 /* TipsCollectionViewController.m in Sources */,
 				AEED554B19D114B900D3ED29 /* Tip.m in Sources */,
-				AE25E95719F6060E0025EDA1 /* UIKitFrameworkExampleViewController.m in Sources */,
 				AEC33BD819ECAEA500A95C1F /* SocialFrameworkExampleViewController.m in Sources */,
 				AEED554719D1149B00D3ED29 /* TipsSplitViewController.m in Sources */,
 				AEC33BDE19ECAED400A95C1F /* MediaPlayerFrameworkExampleViewController.m in Sources */,
@@ -581,9 +567,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iOSMobileTips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSMobileTips/iOSMobileTips-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -591,9 +580,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iOSMobileTips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSMobileTips/iOSMobileTips-Bridging-Header.h";
 			};
 			name = Release;
 		};

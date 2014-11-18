@@ -28,16 +28,6 @@
     NSURL *url = [[NSURL alloc] initWithString:@"http://messenger.jhuapl.edu/the_mission/movies/LunarEclipse_20141008_x2.mp4"];
     
     self.mvController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(playMovie)
-//                                                 name:MPMoviePlayerPlaybackStateDidChangeNotification object:nil];
-//    
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(playMovie2)
-//                                                 name:MPMoviePlayerNowPlayingMovieDidChangeNotification object:nil];
-   
-    
-    // Do any additional setup after loading the view.
 }
 
 - (IBAction)playMe:(id)sender
@@ -51,16 +41,6 @@
 
     
 }
-
-//-(void) playMovie
-//{
-//    [self.activityIndicator stopAnimating];
-//}
-//
-//-(void) playMovie2
-//{
-//    [self.activityIndicator stopAnimating];
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
