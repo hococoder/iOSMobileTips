@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E574617-7DFD-4FED-810B-21D2B44FF3AE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOSMobileTips</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F1BB1499FAA78DA97982E02EB39E22C3C3B57EFE</key>
+		<string>https://github.com/hococoder/iOSMobileTips.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOSMobileTips.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F1BB1499FAA78DA97982E02EB39E22C3C3B57EFE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hococoder/iOSMobileTips.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F1BB1499FAA78DA97982E02EB39E22C3C3B57EFE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F1BB1499FAA78DA97982E02EB39E22C3C3B57EFE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSMobileTips</string>
+		</dict>
+	</array>
+</dict>
+</plist>
